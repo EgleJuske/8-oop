@@ -4,7 +4,7 @@
 
 /*
 
-Animal.js (params: name, color, sound; methods: voice();)
+Animal.js (params: name, color, sound; methods: voice(), introduce();)
     Pet.js (paveldi is Animal.js)
         Dog.js (paveldi is Pet.js)
         Cat.js (paveldi is Pet.js)
@@ -22,3 +22,23 @@ Animal.js (params: name, color, sound; methods: voice();)
         Nemo.js (viska paveldi is Fish.js)
 
 */
+
+import { Dog } from './components/Dog.js';
+import { Cat } from './components/Cat.js';
+import { Hamster } from './components/Hamster.js';
+
+const toris = new Dog('Toris', 'brown');
+
+console.log(`${toris.name} is ${toris.color}`);
+
+
+toris.voice();
+
+const murkis = new Cat('Murkis', 'golden');
+
+murkis.voice();
+
+const kukulis = new Hamster('Kukulis', 'yellow')
+kukulis.voice();
+
+kukulis.introduce('Egle');
